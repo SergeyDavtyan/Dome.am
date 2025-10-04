@@ -1,6 +1,6 @@
 const stroyka_translate = {
-    ru: {
-        build_info: `
+  ru: {
+    build_info: `
         <h1>Строительство многоквартирных домов</h1>
                     <div>
                         <p>Полный цикл строительства от проектирования до сдачи объектов в эксплуатацию.</p>
@@ -34,11 +34,11 @@ const stroyka_translate = {
                         <p>6. Сейсмический вывод</p>
                         <p>7․ Содействие в получении акта об окончании, сертификата</p>
         `,
-        footer_1: 'Строительство',
-        footer_2: 'Полезнные ссылки'
-    },
-    am: {
-        build_info: `
+    footer_1: 'Строительство',
+    footer_2: 'Полезнные ссылки',
+  },
+  am: {
+    build_info: `
         <h1>Բազմաբնակարան շենքերի կառուցում</h1>
                     <div>
                         <p>Շինարարության ամբողջական ցիկլ՝ նախագծումից մինչև օբյեկտների հանձնում շահագործման:</p>
@@ -70,18 +70,18 @@ const stroyka_translate = {
                         <p>5. Շին․ թույլտվության փաստաթղթային աշխատանքներով զբաղվելու աջակցություն</p>
                         <p>6. Սեյսմիկ եզրակացություն</p>
                         <p>7․ Ավարտական ակտի, վկայականի ստացման աջակցություն</p>`,
-        footer_1: 'Շինարարություն',
-        footer_2: 'Օգտակար հղումներ'
-    }
-}
+    footer_1: 'Շինարարություն',
+    footer_2: 'Օգտակար հղումներ',
+  },
+};
 
-const build_info = document.getElementById('build-section').firstElementChild.children[1]
+const build_info =
+  document.getElementById('build-section').firstElementChild.children[1];
 
-const link_li = document.querySelector('.link-li').firstElementChild
-
+const link_li = document.querySelector('.link-li').firstElementChild;
 
 export function chang_lang(lang) {
-    build_info.innerHTML = stroyka_translate[lang].build_info
-    link_li.children[0].textContent = stroyka_translate[lang].footer_1
-    link_li.children[1].textContent = stroyka_translate[lang].footer_2
+  build_info.innerHTML = stroyka_translate[lang].build_info;
+  link_li.children[0].textContent = stroyka_translate[lang].footer_1;
+  link_li.children[1].textContent = stroyka_translate[lang].footer_2;
 }

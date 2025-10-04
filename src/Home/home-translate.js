@@ -1,8 +1,7 @@
-
 const translate_home = {
   ru: {
-    btn1: "Строительство",
-    btn2: "Полезнные ссылки",
+    btn1: 'Строительство',
+    btn2: 'Полезнные ссылки',
     head_info: `
         <div class="anima_div"></div>
             <div class="anima_div"></div>
@@ -37,15 +36,15 @@ const translate_home = {
               target="_blank">domeyerevan@gmail.com</a></p>
           <p>Dome Service, Ереван</p>`,
 
-          gmail_h2:`Напишите нам:`,
-          gmail_placeholder_1:`Имя*`,
-          gmail_placeholder_3:`Тема`,
-          gmail_placeholder_4:`Сообщение*`
+    gmail_h2: `Напишите нам:`,
+    gmail_placeholder_1: `Имя*`,
+    gmail_placeholder_3: `Тема`,
+    gmail_placeholder_4: `Сообщение*`,
   },
 
   am: {
-    btn1: "Շինարարություն",
-    btn2: "Օգտակար հղումներ",
+    btn1: 'Շինարարություն',
+    btn2: 'Օգտակար հղումներ',
     head_info: `
         <div class="anima_div"></div>
             <div class="anima_div"></div>
@@ -79,35 +78,34 @@ const translate_home = {
               target="_blank">domeyerevan@gmail.com</a></p>
           <p>ԴՈՈԻՄ ՍԵՐՎԻՍ" ՍՊԸ, ԵՐԵՎԱՆ, Ծիծեռնակաբերդի խճուղի 1/2</p>`,
 
-          gmail_h2:`Գրեք մեզ:`,
-          gmail_placeholder_1:`Անուն*`,
-          gmail_placeholder_3:`Թեմա`,
-          gmail_placeholder_4:`Հաղորդակցություն*`
-  }
-}
+    gmail_h2: `Գրեք մեզ:`,
+    gmail_placeholder_1: `Անուն*`,
+    gmail_placeholder_3: `Թեմա`,
+    gmail_placeholder_4: `Հաղորդակցություն*`,
+  },
+};
 
-const header = document.querySelector('header')
-const link_li = document.querySelector('.link-li').firstElementChild
-const gmail_h2 = document.querySelector('.message-div > h2')
-const inputs = document.querySelector('.inputs')
-const textarea = document.querySelector('.textarea').firstElementChild
-
-
-
-
+const header = document.querySelector('header');
+const link_li = document.querySelector('.link-li').firstElementChild;
+const gmail_h2 = document.querySelector('.message-div > h2');
+const inputs = document.querySelector('.inputs');
+const textarea = document.querySelector('.textarea').firstElementChild;
 
 export function changLang(lang) {
-  header.firstElementChild.firstElementChild.children[0].textContent = translate_home[lang].btn1
-  header.firstElementChild.firstElementChild.children[1].textContent = translate_home[lang].btn2
-  header.firstElementChild.children[1].innerHTML = translate_home[lang].head_info
-  header.children[1].innerHTML = translate_home[lang].about
-  header.children[2].innerHTML = translate_home[lang].services
-  header.children[3].innerHTML = translate_home[lang].constacts
-  link_li.children[0].textContent = translate_home[lang].btn1
-  link_li.children[1].textContent = translate_home[lang].btn2
+  header.firstElementChild.firstElementChild.children[0].textContent =
+    translate_home[lang].btn1;
+  header.firstElementChild.firstElementChild.children[1].textContent =
+    translate_home[lang].btn2;
+  header.firstElementChild.children[1].innerHTML =
+    translate_home[lang].head_info;
+  header.children[1].innerHTML = translate_home[lang].about;
+  header.children[2].innerHTML = translate_home[lang].services;
+  header.children[3].innerHTML = translate_home[lang].constacts;
+  link_li.children[0].textContent = translate_home[lang].btn1;
+  link_li.children[1].textContent = translate_home[lang].btn2;
 
-  gmail_h2.textContent = translate_home[lang].gmail_h2
-  inputs.children[0].placeholder = translate_home[lang].gmail_placeholder_1
-  inputs.children[2].placeholder = translate_home[lang].gmail_placeholder_3
-  textarea.placeholder = translate_home[lang].gmail_placeholder_4
+  gmail_h2.textContent = translate_home[lang].gmail_h2;
+  inputs.children[0].placeholder = translate_home[lang].gmail_placeholder_1;
+  inputs.children[2].placeholder = translate_home[lang].gmail_placeholder_3;
+  textarea.placeholder = translate_home[lang].gmail_placeholder_4;
 }

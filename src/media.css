@@ -1,628 +1,597 @@
-@media screen and (max-width:1400px) {
-    #header-section {
-        background-position-y: 0px;
+@media screen and (max-width: 1400px) {
+  #header-section {
+    background-position-y: 0px;
 
-        header {
+    header {
+      div:nth-child(1) > .header-info > .anima_div {
+        background-color: #719ccc;
+      }
 
-            div:nth-child(1)>.header-info>.anima_div {
-                background-color: #719ccc;
-            }
+      .services {
+        transform: scale(1);
+      }
 
-            .services {
-                transform: scale(1);
-            }
-
-            .contacts {
-                transform: scale(1);
-            }
-
-        }
+      .contacts {
+        transform: scale(1);
+      }
     }
+  }
 }
 
-@media screen and (max-width:800px) {
-    .message-li {
-        display: none;
-    }
+@media screen and (max-width: 800px) {
+  .message-li {
+    display: none;
+  }
 
-    #nav-section {
-        padding: 10px 20px 10px 20px;
-    }
+  #nav-section {
+    padding: 10px 20px 10px 20px;
+  }
 
-    #header-section {
+  #header-section {
+    header {
+      div:nth-child(1) > .header-info > .anima_div {
+        background-color: #79a5d0;
+      }
 
-        header {
+      div:nth-child(1) {
+        flex-direction: column;
+        gap: 20px;
 
-            div:nth-child(1)>.header-info>.anima_div {
-                background-color: #79a5d0;
-            }
-
-
-            div:nth-child(1) {
-                flex-direction: column;
-                gap: 20px;
-
-                .header-info {
-                    width: 100%;
-                    padding: 17px 10px;
-                }
-            }
-
-            .about {
-                h1 {
-                    margin-bottom: 15px;
-                }
-
-                p {
-                    font-size: 1rem;
-                }
-            }
-
-            .services {
-                margin-top: 150px;
-            }
+        .header-info {
+          width: 100%;
+          padding: 17px 10px;
         }
-    }
+      }
 
-    #footer-section {
-        footer {
-
-            ul {
-                .gmail-li {
-                    a {
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-
-            h3 {
-                font-size: 1rem;
-            }
-        }
-    }
-
-    #build-section {
-        .build-image {
-            height: 300px;
+      .about {
+        h1 {
+          margin-bottom: 15px;
         }
 
-        .build-info {
-            padding: 30px 10px 120px 10px;
+        p {
+          font-size: 1rem;
         }
+      }
+
+      .services {
+        margin-top: 150px;
+      }
     }
+  }
+
+  #footer-section {
+    footer {
+      ul {
+        .gmail-li {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  #build-section {
+    .build-image {
+      height: 300px;
+    }
+
+    .build-info {
+      padding: 30px 10px 120px 10px;
+    }
+  }
 }
 
-@media screen and (max-width:600px) {
-    #nav-section {
-
-        nav {
-            height: 170px;
-        }
-
-        nav>ul>.logo-li {
-            padding: 0px;
-
-            div:nth-child(1) {
-                width: 200px;
-
-                .box {
-                    padding: 25px 35px 25px 35px;
-                }
-
-                h2 {
-                    font-size: 28px;
-                    top: 38px;
-                    right: 30px;
-                }
-            }
-
-            div:nth-child(2) {
-                bottom: 20px;
-                position: absolute;
-            }
-        }
-
-        nav>ul>.lang-li {
-            margin-left: 0px;
-
-            div {
-                padding: 0px;
-                gap: 17px;
-
-                button {
-                    height: 46px;
-                }
-            }
-        }
+@media screen and (max-width: 600px) {
+  #nav-section {
+    nav {
+      height: 170px;
     }
 
-    #header-section {
+    nav > ul > .logo-li {
+      padding: 0px;
 
-        header {
+      div:nth-child(1) {
+        width: 200px;
 
-            div:nth-child(1)>.header-info>.anima_div {
-                height: 99%;
-            }
-
-            div:nth-child(1) {
-
-                .header-info {
-
-                    p {
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-
-            .about {
-                padding-top: 20px;
-
-                h1 {
-                    margin-bottom: 15px;
-                    font-size: 1.5rem;
-                }
-
-                p {
-                    font-size: .9rem;
-                }
-            }
-
-            .services {
-                margin-top: 130px;
-                padding: 10px;
-
-                h2 {
-                    font-size: 1.4rem;
-                }
-
-                p+p {
-                    margin-top: 20px;
-                }
-            }
-
-            .contacts {
-                padding: 10px;
-
-                h2 {
-                    font-size: 1.4rem;
-                }
-            }
+        .box {
+          padding: 25px 35px 25px 35px;
         }
+
+        h2 {
+          font-size: 28px;
+          top: 38px;
+          right: 30px;
+        }
+      }
+
+      div:nth-child(2) {
+        bottom: 20px;
+        position: absolute;
+      }
     }
 
-    #gmail-section {
+    nav > ul > .lang-li {
+      margin-left: 0px;
 
-        .gmail-wrapper {
-            .message-div {
-                h2 {
-                    font-size: 1.4rem;
-                }
+      div {
+        padding: 0px;
+        gap: 17px;
 
-                .form-div {
-                    flex-direction: column;
-                }
-            }
+        button {
+          height: 46px;
         }
+      }
     }
+  }
 
-    #footer-section {
-        footer {
+  #header-section {
+    header {
+      div:nth-child(1) > .header-info > .anima_div {
+        height: 99%;
+      }
 
-            ul {
-                flex-direction: column;
-                gap: 20px;
-
-                .link-li {
-
-                    div {
-                        gap: 10px;
-
-                    }
-                }
-
-                .gmail-li {
-                    a {
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-
-            h3 {
-                font-size: 1rem;
-                margin-top: 50px;
-            }
+      div:nth-child(1) {
+        .header-info {
+          p {
+            font-size: 1.1rem;
+          }
         }
-    }
+      }
 
-    #build-section {
-        .build-image {
-            height: 250px;
+      .about {
+        padding-top: 20px;
+
+        h1 {
+          margin-bottom: 15px;
+          font-size: 1.5rem;
         }
 
-        .build-info {
-            padding: 30px 10px 120px 10px;
-
-            h1 {
-                font-size: 2rem;
-                margin-inline: 5px;
-            }
-
-            div {
-                margin-bottom: 20px;
-            }
+        p {
+          font-size: 0.9rem;
         }
-    }
+      }
 
-    #parlament-section {
-        .parlament-div {
-            .div_1_main {
-                height: 350px;
-            }
-
-            .div_2_main {
-                height: 800px;
-            }
-
-            .div_3_main {
-                height: 850px;
-            }
-
-
-
-            .div_1 {
-
-                h2 {
-                    font-size: 1.2rem;
-                }
-
-                .bi {
-                    font-size: 1.4rem;
-                    top: 20px;
-                }
-
-                .parl_info_1 {
-
-
-                    p,
-                    a {
-                        font-size: 1rem;
-                        margin-bottom: 8px;
-                    }
-
-                    p {
-                        margin-bottom: 15px;
-                    }
-                }
-            }
-
-            .div_2 {
-                h2 {
-                    font-size: 1rem;
-                    font-weight: 100;
-                    margin-right: 50px;
-                }
-
-                .bi {
-                    font-size: 1.2rem;
-                    top: 20px;
-                }
-
-                .parl_info_2 {
-                    border-bottom: .7px solid var(--color-1);
-
-                    p,
-                    a {
-                        font-size: .9rem;
-                        margin-bottom: 10px;
-                    }
-
-                    a:nth-child(1) {
-                        width: 145px;
-                    }
-
-                }
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width:400px) {
-    #nav-section {
+      .services {
+        margin-top: 130px;
         padding: 10px;
 
-        nav {
-            height: 160px;
+        h2 {
+          font-size: 1.4rem;
         }
 
-        nav>ul>.logo-li {
-            padding: 0px;
+        p + p {
+          margin-top: 20px;
+        }
+      }
 
-            div:nth-child(1) {
-                width: 150px;
-                height: 100px;
-                padding-left: 20px;
-                padding-top: 40px;
+      .contacts {
+        padding: 10px;
 
-                .box {
-                    padding: 13px 23px 13px 23px;
-                    border: 1px solid white;
-                }
+        h2 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 
-                h2 {
-                    font-size: 19px;
-                    top: 39px;
-                    right: 15px;
-                }
-            }
-
-            div:nth-child(2) {
-                bottom: 25px;
-                position: absolute;
-
-                p {
-                    font-size: 19px;
-                }
-            }
+  #gmail-section {
+    .gmail-wrapper {
+      .message-div {
+        h2 {
+          font-size: 1.4rem;
         }
 
-        nav>ul>.lang-li {
-            margin-left: 0px;
-
-            div {
-                padding: 0px;
-                gap: 17px;
-
-                button {
-                    height: 41px;
-                    font-size: 1rem;
-                }
-            }
+        .form-div {
+          flex-direction: column;
         }
+      }
+    }
+  }
+
+  #footer-section {
+    footer {
+      ul {
+        flex-direction: column;
+        gap: 20px;
+
+        .link-li {
+          div {
+            gap: 10px;
+          }
+        }
+
+        .gmail-li {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 1rem;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  #build-section {
+    .build-image {
+      height: 250px;
     }
 
-    #header-section {
-        header {
-            padding: 10px 0;
-            padding-bottom: 100px;
+    .build-info {
+      padding: 30px 10px 120px 10px;
 
-            div:nth-child(1)>.header-info>.anima_div {
-                background: linear-gradient(to top, #6e9cca #709dcc, 0);
-            }
+      h1 {
+        font-size: 2rem;
+        margin-inline: 5px;
+      }
 
-            div:nth-child(1) {
-                align-items: center;
+      div {
+        margin-bottom: 20px;
+      }
+    }
+  }
 
-                .header-btns {
-                    width: 200px;
-                    gap: 10px;
+  #parlament-section {
+    .parlament-div {
+      .div_1_main {
+        height: 350px;
+      }
 
-                    a {
-                        font-size: 1rem;
-                    }
-                }
+      .div_2_main {
+        height: 800px;
+      }
 
-                .header-info {
+      .div_3_main {
+        height: 850px;
+      }
 
-                    p {
-                        font-size: 1.1rem;
-                        line-height: 20px;
-                        letter-spacing: .5px;
-                    }
-                }
-            }
-
-            .about {
-                padding-top: 15px;
-
-                h1 {
-                    margin-bottom: 25px;
-                    font-size: 1.3rem;
-                }
-            }
-
-            .services {
-                margin-top: 130px;
-                padding: 10px;
-                scale: 1.03;
-
-                h2 {
-                    font-size: 1.4rem;
-                }
-
-                p {
-                    font-size: .9rem;
-                    line-height: 20px;
-                }
-
-                p+p {
-                    margin-top: 20px;
-                }
-            }
-
-            .contacts {
-                padding: 10px;
-                scale: 0.93;
-                margin-top: 100px;
-
-                h2 {
-                    font-size: 1.1rem;
-                }
-
-                p {
-                    font-size: .8rem;
-                    line-height: 10px;
-                    margin-bottom: 10px;
-                }
-            }
+      .div_1 {
+        h2 {
+          font-size: 1.2rem;
         }
+
+        .bi {
+          font-size: 1.4rem;
+          top: 20px;
+        }
+
+        .parl_info_1 {
+          p,
+          a {
+            font-size: 1rem;
+            margin-bottom: 8px;
+          }
+
+          p {
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      .div_2 {
+        h2 {
+          font-size: 1rem;
+          font-weight: 100;
+          margin-right: 50px;
+        }
+
+        .bi {
+          font-size: 1.2rem;
+          top: 20px;
+        }
+
+        .parl_info_2 {
+          border-bottom: 0.7px solid var(--color-1);
+
+          p,
+          a {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+          }
+
+          a:nth-child(1) {
+            width: 145px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav-section {
+    padding: 10px;
+
+    nav {
+      height: 160px;
     }
 
-    #gmail-section {
-        padding-bottom: 10px;
+    nav > ul > .logo-li {
+      padding: 0px;
 
-        .gmail-wrapper {
-            .message-div {
-                h2 {
-                    font-size: 1rem;
-                    font-weight: 600;
-                }
+      div:nth-child(1) {
+        width: 150px;
+        height: 100px;
+        padding-left: 20px;
+        padding-top: 40px;
 
-                .submit {
-                    font-size: .9rem;
-                }
-
-                .form-div {
-                    flex-direction: column;
-                    gap: 10px;
-
-                    .inputs {
-                        gap: 10px;
-
-                        input {
-                            padding-left: 7px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
+        .box {
+          padding: 13px 23px 13px 23px;
+          border: 1px solid white;
         }
+
+        h2 {
+          font-size: 19px;
+          top: 39px;
+          right: 15px;
+        }
+      }
+
+      div:nth-child(2) {
+        bottom: 25px;
+        position: absolute;
+
+        p {
+          font-size: 19px;
+        }
+      }
     }
 
-    #footer-section {
-        footer {
-            ul {
-                flex-direction: column;
-                gap: 20px;
+    nav > ul > .lang-li {
+      margin-left: 0px;
 
-                .link-li {
+      div {
+        padding: 0px;
+        gap: 17px;
 
-                    div {
-                        gap: 10px;
-
-                        a {
-                            font-size: 1rem;
-                            padding: 12px 20px;
-                        }
-                    }
-                }
-
-                .gmail-li {
-                    a {
-                        font-size: .9rem;
-                    }
-                }
-            }
-
-            h3 {
-                font-size: .9rem;
-                margin-top: 30px;
-            }
+        button {
+          height: 41px;
+          font-size: 1rem;
         }
+      }
+    }
+  }
+
+  #header-section {
+    header {
+      padding: 10px 0;
+      padding-bottom: 100px;
+
+      div:nth-child(1) > .header-info > .anima_div {
+        background: linear-gradient(to top, #6e9cca #709dcc, 0);
+      }
+
+      div:nth-child(1) {
+        align-items: center;
+
+        .header-btns {
+          width: 200px;
+          gap: 10px;
+
+          a {
+            font-size: 1rem;
+          }
+        }
+
+        .header-info {
+          p {
+            font-size: 1.1rem;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+
+      .about {
+        padding-top: 15px;
+
+        h1 {
+          margin-bottom: 25px;
+          font-size: 1.3rem;
+        }
+      }
+
+      .services {
+        margin-top: 130px;
+        padding: 10px;
+        scale: 1.03;
+
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          line-height: 20px;
+        }
+
+        p + p {
+          margin-top: 20px;
+        }
+      }
+
+      .contacts {
+        padding: 10px;
+        scale: 0.93;
+        margin-top: 100px;
+
+        h2 {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+          line-height: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  #gmail-section {
+    padding-bottom: 10px;
+
+    .gmail-wrapper {
+      .message-div {
+        h2 {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        .submit {
+          font-size: 0.9rem;
+        }
+
+        .form-div {
+          flex-direction: column;
+          gap: 10px;
+
+          .inputs {
+            gap: 10px;
+
+            input {
+              padding-left: 7px;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #footer-section {
+    footer {
+      ul {
+        flex-direction: column;
+        gap: 20px;
+
+        .link-li {
+          div {
+            gap: 10px;
+
+            a {
+              font-size: 1rem;
+              padding: 12px 20px;
+            }
+          }
+        }
+
+        .gmail-li {
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 0.9rem;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  #build-section {
+    .build-image {
+      height: 150px;
     }
 
-    #build-section {
-        .build-image {
-            height: 150px;
+    .build-info {
+      padding: 30px 10px 120px 10px;
+
+      h1 {
+        font-size: 1.8rem;
+        margin-inline: 10px;
+      }
+
+      div {
+        margin-bottom: 20px;
+
+        p {
+          margin-top: 4px;
         }
-
-        .build-info {
-            padding: 30px 10px 120px 10px;
-
-            h1 {
-                font-size: 1.8rem;
-                margin-inline: 10px;
-            }
-
-            div {
-                margin-bottom: 20px;
-
-                p {
-                    margin-top: 4px;
-                }
-            }
-        }
+      }
     }
+  }
 
+  #parlament-section {
+    .parlament-div {
+      padding-top: 30px;
+      .div_1_main {
+        height: 350px;
+      }
 
+      .div_2_main {
+        height: 900px;
+      }
 
-    #parlament-section {
-        .parlament-div {
-            padding-top: 30px;
-            .div_1_main {
-                height: 350px;
-            }
+      .div_3_main {
+        height: 1050px;
+      }
 
-            .div_2_main {
-                height: 900px;
-            }
-
-            .div_3_main {
-                height: 1050px;
-            }
-
-
-
-            .div_1 {
-
-                h2 {
-                    font-size: 1rem;
-                    padding-left: 0px;
-                }
-
-                .bi {
-                    font-size: 1.2rem;
-                    top: 20px;
-                }
-
-                .parl_info_1 {
-                    border-bottom: 0.5px solid var(--color-1);
-                    padding-left: 0px;
-
-
-                    p,
-                    a {
-                        font-size: .9rem;
-                        margin-bottom: 10px;
-                    }
-
-                    p {
-                        margin-bottom: 15px;
-                    }
-                }
-            }
-
-            h3{
-                font-size: 1.2rem;
-            }
-
-            .div_2 {
-                h2 {
-                    font-size: 1rem;
-                    font-weight: 100;
-                    margin-right: 50px;
-                }
-
-                .bi {
-                    font-size: 1.2rem;
-                    top: 20px;
-                }
-
-                .parl_info_2 {
-                    border-bottom: .7px solid var(--color-1);
-
-                    p,
-                    a {
-                        font-size: .9rem;
-                        margin-bottom: 10px;
-                    }
-
-                    a:nth-child(1) {
-                        width: 145px;
-                    }
-
-                }
-            }
+      .div_1 {
+        h2 {
+          font-size: 1rem;
+          padding-left: 0px;
         }
+
+        .bi {
+          font-size: 1.2rem;
+          top: 20px;
+        }
+
+        .parl_info_1 {
+          border-bottom: 0.5px solid var(--color-1);
+          padding-left: 0px;
+
+          p,
+          a {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .div_2 {
+        h2 {
+          font-size: 1rem;
+          font-weight: 100;
+          margin-right: 50px;
+        }
+
+        .bi {
+          font-size: 1.2rem;
+          top: 20px;
+        }
+
+        .parl_info_2 {
+          border-bottom: 0.7px solid var(--color-1);
+
+          p,
+          a {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+          }
+
+          a:nth-child(1) {
+            width: 145px;
+          }
+        }
+      }
     }
+  }
 }

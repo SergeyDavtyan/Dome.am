@@ -1,6 +1,6 @@
 const parlament_translate = {
-    ru: {
-        parlament_info: `
+  ru: {
+    parlament_info: `
                 <div class="div_1_main">
                     <div class="div_1">
                         <h2>Президент РА</h2>
@@ -389,12 +389,12 @@ const parlament_translate = {
 
                 </div> `,
 
-        footer_1: 'Строительство',
-        footer_2: 'Полезнные ссылки'
-    },
+    footer_1: 'Строительство',
+    footer_2: 'Полезнные ссылки',
+  },
 
-    am: {
-        parlament_info: `
+  am: {
+    parlament_info: `
                 <div class="div_1_main">
                     <div class="div_1">
                         <h2>ՀՀ Նախագահ</h2>
@@ -731,18 +731,16 @@ const parlament_translate = {
 
                 </div> `,
 
-        footer_1: 'Շինարարություն',
-        footer_2: 'Օգտակար հղումներ'
-    }
-}
+    footer_1: 'Շինարարություն',
+    footer_2: 'Օգտակար հղումներ',
+  },
+};
 
-
-const parl_info = document.getElementsByClassName('parlament-div')[0]
-const link_li = document.querySelector('.link-li').firstElementChild
-
+const parl_info = document.getElementsByClassName('parlament-div')[0];
+const link_li = document.querySelector('.link-li').firstElementChild;
 
 export function chang_lang(lang) {
-    parl_info.innerHTML = parlament_translate[lang].parlament_info
-    link_li.children[0].textContent = parlament_translate[lang].footer_1
-    link_li.children[1].textContent = parlament_translate[lang].footer_2
+  parl_info.innerHTML = parlament_translate[lang].parlament_info;
+  link_li.children[0].textContent = parlament_translate[lang].footer_1;
+  link_li.children[1].textContent = parlament_translate[lang].footer_2;
 }
