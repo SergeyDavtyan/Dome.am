@@ -115,5 +115,10 @@
   "title.parlament-31": "Центральная избирательная комиссия РА",
   "a.adress_31": "Адрес: Армения, Ереван, Геворга Кочара 21А",
   "title.parlament-32": "Центральный банк РА",
-  "a.adress_32": "Адрес: РА, 0010, гл. Ереван, В.Саргсян 6."
+  "a.adress_32": "Адрес: РА, 0010, гл. Ереван, В.Саргсян 6.",
+  "placeholder.name": "Имя*",
+  "placeholder.email": "Email*",
+  "placeholder.theme": "Тема",
+  "placeholder.message": "Сообщение*",
+  "button.submit": "Отправить"
 }

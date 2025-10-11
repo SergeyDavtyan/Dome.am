@@ -28,7 +28,6 @@ async function loadLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('lang', lang);
   applyTranslations();
-  placeholders();
 }
 
 function applyTranslations() {
@@ -42,6 +41,18 @@ function applyTranslations() {
     } else {
       if (translations[key]) el.textContent = translations[key];
     }
+  });
+
+  // Placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (translations[key]) el.placeholder = translations[key];
+  });
+
+  // Values (for submit buttons)
+  document.querySelectorAll('[data-i18n-value]').forEach(el => {
+    const key = el.dataset.i18nValue;
+    if (translations[key]) el.value = translations[key];
   });
 
   changeHref(currentLang);
@@ -88,37 +99,5 @@ function changeHref(lang) {
   });
 }
 
-function placeholders() {
-  if (!window.location.pathname.includes('index.html')) return;
-
-  const nameInput = document.querySelector('input[name="username"]');
-  const emailInput = document.querySelector('input[name="from"]');
-  const themeInput = document.querySelector('input[name="theme"]');
-  const messageTextarea = document.querySelector('textarea[name="message"]');
-  const submitBtn = document.querySelector('input[type="submit"]');
-
-  if (
-    !nameInput ||
-    !emailInput ||
-    !themeInput ||
-    !messageTextarea ||
-    !submitBtn
-  )
-    return;
-
-  if (currentLang === 'am') {
-    nameInput.placeholder = 'Անուն*';
-    emailInput.placeholder = 'Էլ. փոստ*';
-    themeInput.placeholder = 'Թեմա';
-    messageTextarea.placeholder = 'Հաղորդագրություն*';
-    submitBtn.value = 'Ուղարկել';
-  } else {
-    nameInput.placeholder = 'Имя*';
-    emailInput.placeholder = 'Email*';
-    themeInput.placeholder = 'Тема';
-    messageTextarea.placeholder = 'Сообщение*';
-    submitBtn.value = 'Отправить';
-  }
-}
 
 loadLanguage(currentLang);
