@@ -189,7 +189,8 @@ textarea {
         flex-direction: column;
         width: 240px;
         gap: 20px;
-        justify-content: flex-start;
+        justify-content: space-between;
+
 
         a {
           background-color: var(--color-1);
@@ -271,9 +272,10 @@ textarea {
 
       p {
         font-size: 1.1rem;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         letter-spacing: 0.5px;
       }
+
 
       .help_p {
         margin-top: 30px;
@@ -297,7 +299,7 @@ textarea {
         line-height: 24px;
       }
 
-      p + p {
+      p+p {
         margin-top: 30px;
       }
     }
@@ -330,7 +332,7 @@ textarea {
         }
       }
 
-      p + p + p {
+      p+p+p {
         margin-top: 40px;
       }
     }
@@ -543,6 +545,8 @@ textarea {
 #parlament-section {
   position: relative;
   padding: 10px;
+  background-color: rgba(173, 216, 230, 0.639);
+
 
   .parlament-div {
     max-width: var(--max-width);
