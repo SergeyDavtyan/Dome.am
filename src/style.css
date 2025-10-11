@@ -191,7 +191,6 @@ textarea {
         gap: 20px;
         justify-content: space-between;
 
-
         a {
           background-color: var(--color-1);
           text-align: center;
@@ -222,36 +221,41 @@ textarea {
         .anima_div {
           position: absolute;
           width: 10px;
-          height: 100%;
           background: linear-gradient(to top, #7ca7d2, #76a2cf);
           transform-origin: right;
           top: 0px;
+        }
 
-          &:nth-child(1) {
+        .anima_divs.active {
+          .anima_div {
+            height: 100%;
+          }
+
+          & > div:nth-child(1) {
             left: 25px;
             width: 40px;
             animation: anima1 1.4s forwards ease-in-out;
           }
 
-          &:nth-child(2) {
+          & > div:nth-child(2) {
             left: 90px;
             width: 35px;
             animation: anima1 1.2s forwards ease-in-out;
           }
 
-          &:nth-child(3) {
+          & > div:nth-child(3) {
             width: 30px;
             left: 150px;
             animation: anima1 1s forwards ease-in-out;
           }
 
-          &:nth-child(4) {
+          & > div:nth-child(4) {
             width: 25px;
             left: 205px;
             animation: anima1 0.8s forwards ease-in-out;
           }
 
-          &:nth-child(5) {
+          & > div:nth-child(5) {
             width: 20px;
             left: 255px;
             animation: anima1 0.6s forwards ease-in-out;
@@ -276,7 +280,6 @@ textarea {
         letter-spacing: 0.5px;
       }
 
-
       .help_p {
         margin-top: 30px;
       }
@@ -299,7 +302,7 @@ textarea {
         line-height: 24px;
       }
 
-      p+p {
+      p + p {
         margin-top: 30px;
       }
     }
@@ -332,7 +335,7 @@ textarea {
         }
       }
 
-      p+p+p {
+      p + p + p {
         margin-top: 40px;
       }
     }
@@ -532,21 +535,10 @@ textarea {
   }
 }
 
-@keyframes anima1 {
-  0% {
-    transform: scaleX(1);
-  }
-
-  100% {
-    transform: scaleX(0);
-  }
-}
-
 #parlament-section {
   position: relative;
   padding: 10px;
   background-color: rgba(173, 216, 230, 0.639);
-
 
   .parlament-div {
     max-width: var(--max-width);
@@ -669,5 +661,15 @@ textarea {
         }
       }
     }
+  }
+}
+
+@keyframes anima1 {
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
   }
 }
