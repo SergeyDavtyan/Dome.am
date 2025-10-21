@@ -100,4 +100,25 @@ function changeHref(lang) {
 }
 
 
+// Routing functionality
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-route]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const route = this.dataset.route;
+
+      switch (route) {
+        case 'building':
+          window.location.href = 'srtoy.html';
+          break;
+        case 'parlament':
+          window.location.href = 'parlament.html';
+          break;
+        default:
+          console.log('Unknown route:', route);
+      }
+    });
+  });
+});
+
 loadLanguage(currentLang);
