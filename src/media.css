@@ -529,6 +529,12 @@
 
       .div_2_main {
         height: 900px;
+
+        h2{
+        color: --color-1;
+
+        }
+        
       }
 
       .div_3_main {
